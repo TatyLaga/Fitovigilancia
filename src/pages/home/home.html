@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar color= "primary">
+    <ion-title>Fitovigilancia</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+  <ion-slides  autoplay="1000" loop="true" speed="1500" pager="true" (ionSlideDidChange)="slideChanged()" class="center2">
+    <ion-slide>
+      <img src="assets/imgs/CosmetoApp.png" alt="img1">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/index.jpg" alt="img2">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/index3.jpg" alt="img3">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/imgs/index2.jpg" alt="img4">
+    </ion-slide>
+  </ion-slides>
+
+  <h2 class="center2"><strong>App de Fitovigilancia</strong> </h2>
+  <h4 class="center2">Aplicación para gestión y reporte de eventos adversos con productos fitoterapéuticos</h4>
+
+  <button ion-button icon-start ion-button block class="center" (click)="gotoGenerar();" >
+    
+    
+    <ion-icon name="md-paper"></ion-icon>
+    Generar Reporte
+    
+  </button>
+
+  
+  <button ion-button icon-start ion-button block class="center2" (click)="gotoHistorico();">
+    <ion-icon name="md-time"></ion-icon>
+    Historico
+  </button>
+
+  <button ion-button icon-start ion-button block class="center2" (click)="gotoRegistro();">
+    <ion-icon name="md-person-add"></ion-icon>
+    Registro
+  </button>
+
+</ion-content>
